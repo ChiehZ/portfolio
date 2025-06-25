@@ -19,47 +19,47 @@ import { Badge } from '@/components/ui/badge';
 // Here is all the text and link content for your portfolio.
 // Modify the data here, and the corresponding parts of the website will update automatically.
 const portfolioData = {
-  name: '王大明',
-  title: '软件工程师 | 全栈开发爱好者',
-  bio: '一位对打造优雅且高效能软件充满热情的应届毕业生。擅长使用 React 和 Node.js 构建用户喜爱的应用，并热衷于学习新技术解决挑战。',
+  name: '范相杰',
+  title: '软件开发工程师 | 全栈开发爱好者',
+  bio: '一位对打造优雅且高效能软件充满热情的211毕业生，热衷于学习新技术解决挑战。',
   contact: {
-    email: 'da.ming.wang@email.com',
-    github: 'https://github.com/damingwang',
-    linkedin: 'https://linkedin.com/in/damingwang',
+    email: 'nyoc826@email.com',
+    github: 'https://github.com/ChiehZ',
+    linkedin: 'https://linkedin.com/in/xiangjie',
   },
   avatarUrl: `https://api.dicebear.com/7.x/avataaars/svg?seed=Daming&backgroundColor=b6e3f4,c0aede,d1d4f9`, // Use a cute example avatar
-  about: '我是一名刚从北京科技大学信息工程学系毕业的社会新鲜人。在学期间，我专注于网页全栈开发，并通过多个实务项目，从前端的互动设计到后端的数据库与服务器架构，建立了扎实的基础。我享受团队合作，乐于将困难的问题拆解、分析并找到最佳解决方案。我相信好的软件能为世界带来正向的改变，并期待能加入一个充满活力的团队，贡献所长并持续成长。',
+  about: '我是一名刚从北京科技大学信息工程学系毕业不久的社会新人。在学期间，我专注于网页全栈开发，并通过多个实务项目，从前端的互动设计到后端的数据库与服务器架构，建立了扎实的基础。我享受团队合作，乐于将困难的问题拆解、分析并找到最佳解决方案。我相信好的软件能为世界带来正向的改变，并期待能加入一个充满活力的团队，贡献所长并持续成长。',
   projects: [
     {
-      title: '智能电商平台',
-      description: '一个使用 Next.js 和 TypeScript 打造的现代化电商网站，整合了 Stripe 金流和基于用户行为的个性化商品推荐系统。',
-      tags: ['React', 'Next.js', 'TypeScript', 'Stripe', 'Vercel', 'TailwindCSS'],
-      liveUrl: '#',
-      repoUrl: '#',
-      image: 'https://images.unsplash.com/photo-1522199755839-a2bacb67c546?auto=format&fit=crop&w=800&q=60'
+      title: 'GitHub 仓库建立日期查询工具',
+      description: '一个简单的浏览器插件，可以查询 GitHub 仓库的建立日期。使用 React 和 GitHub API 开发，帮助开发者快速查看任何公开仓库的建立时间。',
+      tags: ['React', 'GitHub API', 'TypeScript', 'Browser Extension'],
+      liveUrl: 'https://chiehz.github.io/github-show-created-date/',
+      repoUrl: 'https://github.com/ChiehZ/github-show-created-date',
+      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80'
     },
     {
-      title: '实时聊天应用',
-      description: '基于 WebSocket 的全栈聊天应用，支持多人聊天室和私信功能。后端使用 Express 和 Socket.IO 实现，确保低延迟通讯。',
-      tags: ['Node.js', 'Express', 'Socket.IO', 'React', 'WebSocket'],
-      liveUrl: '#',
-      repoUrl: '#',
-      image: 'https://images.unsplash.com/photo-1554629947-334ff61d85dc?auto=format&fit=crop&w=800&q=60'
+      title: 'YouTube 自动生成播放列表',
+      description: '一个自动化工具，可以根据设定的条件自动生成并管理 YouTube 播放列表。支持关键字过滤、频道订阅等功能。',
+      tags: ['Javascript', 'YouTube API', 'Automation', 'Playlist'],
+      liveUrl: 'https://github.com/ChiehZ/youtube-autogenerate-playlists',
+      repoUrl: 'https://github.com/ChiehZ/youtube-autogenerate-playlists',
+      image: 'https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?auto=format&fit=crop&w=800&q=80'
     },
     {
-      title: '个人理财仪表板',
-      description: '使用 React 和 Chart.js 打造的个人财务管理工具，通过 Plaid API 安全地连结银行帐户，提供可视化的收支分析。',
-      tags: ['React', 'Chart.js', 'Plaid API', 'Data Viz'],
+      title: '机器视觉拣选机器人',
+      description: '实验室老师带领开发的机器视觉拣选系统，使用深度学习模型进行物件识别与分类，实现自动化拣选流程。',
+      tags: ['Python', 'OpenCV', 'Deep Learning', 'Computer Vision', 'Robotics'],
       liveUrl: '#',
       repoUrl: '#',
-      image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=800&q=60'
+      image: 'https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=800&q=80'
     }
   ],
   skills: {
-    '编程语言': ['JavaScript (ES6+)', 'TypeScript', 'Python', 'HTML5 & CSS3'],
-    '前端技术': ['React', 'Next.js', 'Vue.js', 'TailwindCSS', 'Redux Toolkit', 'Vite'],
-    '后端技术': ['Node.js', 'Express.js', 'RESTful API', 'GraphQL', 'PostgreSQL', 'MongoDB'],
-    '开发工具 & 平台': ['Git & GitHub', 'Docker', 'Vercel', 'AWS (S3, EC2)', 'Figma', 'Jest']
+    '编程语言': ['JavaScript (ES6+)', 'TypeScript', 'Go', 'Rust'],
+    '前端技术': ['React', 'Next.js', 'Vue.js', 'TailwindCSS', 'Bun', 'Vite'],
+    '后端技术': ['Node.js', 'Express.js', 'RESTful API', 'Hono', 'MongoDB'],
+    '开发工具 & 平台': ['Git & GitHub', 'Docker', 'Vercel', 'Neovim', 'Helix']
   }
 };
 
@@ -212,7 +212,7 @@ const ProjectCard = ({ project }) => (
  * - It iterates over the `portfolioData.projects` array and renders a `ProjectCard` for each project.
  */
 const ProjectsSection = () => (
-    <SectionWrapper id="projects" title="精选项目" icon={Briefcase}>
+    <SectionWrapper id="projects" title="SIDE PROJECTS" icon={Briefcase}>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {portfolioData.projects.map(p => <ProjectCard key={p.title} project={p} />)}
         </div>
@@ -240,6 +240,31 @@ const SkillsSection = () => (
 );
 
 /**
+ * Meme Section Component
+ * @returns {JSX.Element} - A fun programming meme section to add some humor.
+ */
+const MemeSection = () => (
+    <section className="py-12 bg-muted/50">
+        <div className="container">
+            <div className="flex flex-col items-center justify-center max-w-2xl mx-auto">
+                <h3 className="mb-6 text-2xl font-bold text-center">最后是迷因😄</h3>
+                <div className="p-4 bg-white border rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+                    <img 
+                        src="https://i.redd.it/0ug2j4z4z08f1.jpeg" 
+                        alt="Programming meme: I love consoles. Me too." 
+                        className="rounded-lg w-full h-auto"
+                        loading="lazy"
+                    />
+                    <p className="mt-2 text-sm text-center text-muted-foreground">
+                    我...我都爱！
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+);
+
+/**
  * Footer Component
  * @returns {JSX.Element} - The footer at the bottom of the website.
  * - Displays copyright information and the site's tech stack.
@@ -247,7 +272,7 @@ const SkillsSection = () => (
 const Footer = () => (
     <footer className="py-6 border-t">
         <div className="container flex flex-col items-center justify-center gap-4 text-center">
-            <p className="text-sm text-muted-foreground">© {new Date().getFullYear()} {portfolioData.name}. All Rights Reserved.</p>
+            <p className="text-sm text-muted-foreground">© {new Date().getFullYear()} Chieh. All Rights Reserved.</p>
             <p className="text-xs text-muted-foreground">Crafted with React, TailwindCSS, and shadcn/ui</p>
         </div>
     </footer>
@@ -269,6 +294,7 @@ export default function App() {
                 <AboutSection />
                 <ProjectsSection />
                 <SkillsSection />
+                <MemeSection />
             </main>
             <Footer />
         </div>
