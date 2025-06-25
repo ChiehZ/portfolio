@@ -9,6 +9,7 @@ import React from 'react';
 import { Github, Linkedin, Mail, Code, ExternalLink, Briefcase, User, Lightbulb, Menu } from 'lucide-react';
 
 // --- Shadcn UI Components (imported from your components/ui folder) ---
+import { ThemeToggle } from "@/components/theme-toggle";
 import { Button } from '@/components/ui/button';
 import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from '@/components/ui/card';
 import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
@@ -94,6 +95,7 @@ const Header = () => {
                     <a href={`mailto:${portfolioData.contact.email}`}>
                         <Button variant="ghost" size="icon"><Mail className="h-4 w-4" /></Button>
                     </a>
+                    <ThemeToggle />
                     <div className="md:hidden">
                         <Button onClick={() => setIsOpen(!isOpen)} variant="ghost" size="icon">
                             <Menu className="h-5 w-5" />

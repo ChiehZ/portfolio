@@ -144,7 +144,11 @@ console.log(`📄 Found ${entrypoints.length} HTML ${entrypoints.length === 1 ? 
 const result = await build({
   entrypoints,
   outdir,
-  plugins: [plugin],
+  plugins: [plugin({
+    config: {
+      darkMode: 'class',
+    }
+  })],
   minify: true,
   target: "browser",
   sourcemap: "linked",

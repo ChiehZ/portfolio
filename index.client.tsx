@@ -6,6 +6,7 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { default as Component } from "./index";
+import { ThemeProvider } from "@/lib/theme-provider";
 // Optionally: import your app's CSS
 // import "./styles.css";
 
@@ -15,7 +16,9 @@ const elem = document.getElementById("root")!;
 // <StrictMode> is a React helper for checking potential problems in an application.
 const app = (
   <StrictMode>
-    <Component />
+    <ThemeProvider defaultTheme="dark" storageKey="portfolio-theme">
+      <Component />
+    </ThemeProvider>
   </StrictMode>
 );
 
